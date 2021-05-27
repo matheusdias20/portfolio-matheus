@@ -5,9 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- SWIPPER CSS -->
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        
 
+        <!-- SWIPPER CSS -->
+        <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+
+        
         <!-- CSS -->
         <link rel="stylesheet" href="css/root.css">
         <link rel="stylesheet" href="css/media-queries.css">
@@ -30,26 +33,26 @@
                 <div class="nav_menu" id="nav-menu">
                     <ul class="nav_list grid">
                         <li class="nav_item">
-                            <a href="#home" class="nav_link">
+                            <a href="#home" class="nav_link active-link">
                                 <i class="uil uil-estate nav_icon"></i> Home
                             </a>
                         </li>
 
                         <li class="nav_item">
                             <a href="#about" class="nav_link">
-                                <i class="uil uil-user nav_icon"></i> About
+                                <i class="uil uil-user nav_icon"></i> Sobre
                             </a>
                         </li>
 
                         <li class="nav_item">
-                            <a href="#skills" class="nav_link">
+                            <a href="#languagens" class="nav_link">
                                 <i class="uil uil-file-edit-alt nav_icon"></i> Skills
                             </a>
                         </li>
 
                         <li class="nav_item">
-                            <a href="#services" class="nav_link">
-                                <i class="uil uil-briefcase-alt nav_icon"></i> Services
+                            <a href="#qualification" class="nav_link">
+                                <i class="uil uil-briefcase-alt nav_icon"></i> Qualificações
                             </a>
                         </li>
 
@@ -61,7 +64,7 @@
 
                         <li class="nav_item">
                             <a href="#contact" class="nav_link">
-                                <i class="uil uil-message nav_icon"></i> Contact Me
+                                <i class="uil uil-message nav_icon"></i> Contato
                             </a>
                         </li>
                     </ul>
@@ -69,6 +72,10 @@
                 </div>
 
                 <div class="nav_btns">
+                    <!-- Mudando o tema -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+
                     <div class="nav_toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -81,15 +88,15 @@
                 <div class="home_container container grid">
                     <div class="home_content grid">
                         <div class="home_social">
-                            <a href="#" class="home_social-icon" target="_blank">
+                            <a href="https://www.linkedin.com/in/matheus-vieira-53aaa7188/" class="home_social-icon" target="_blank">
                                 <i class="uil uil-linkedin"></i>
                             </a>
 
-                            <a href="#" class="home_social-icon" target="_blank">
+                            <a href="https://github.com/matheusdias20" class="home_social-icon" target="_blank">
                                 <i class="uil uil-github"></i>
                             </a>
 
-                            <a href="#" class="home_social-icon">
+                            <a href="https://dev.to/matheusdias20" class="home_social-icon">
                                 <i class="uil uil-laptop-cloud"></i>
                             </a>
                         </div>
@@ -237,7 +244,7 @@
                 </div>
             </section>
 
-            <section class="qualification section">
+            <section class="qualification section" id="qualification">
                 <h2 class="section_title">Qualificações</h2>
                 <span class="section_subtitle">Minha jornada</span>
 
@@ -418,16 +425,120 @@
             <section class="contact section" id="contact">
                 <h2 class="section_title">Contato</h2>
                 <span class="section_subtitle">Entre em Contato</span>
+                
+                <div class="contact_container container grid">
+                    <div>
+                        <div class="contact_information">
+                            <i class="uil uil-phone contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Me ligue</h3>
+                                <span class="contact_subtitle">(13) 9 9778-6267</span>
+                            </div>
+                        </div>
+
+                        <div class="contact_information">
+                            <i class="uil uil-envelope-upload contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Email</h3>
+                                <span class="contact_subtitle">mvdias20@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact_information">
+                            <i class="uil uil-map-marker contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Cidade</h3>
+                                <span class="contact_subtitle">Santos - São Paulo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact_form grid">
+                        <div class="contact_inputs grid">
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Nome</label>
+                                <input type="text" class="contact_input">
+                            </div>
+
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Email</label>
+                                <input type="email" class="contact_input">
+                            </div>
+                        </div>
+
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Assunto</label>
+                            <input type="email" class="contact_input">
+                        </div>
+
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Mensagem</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="" class="button button-flex">
+                                Enviar
+                                <i class="uil uil-message button_icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </section>
-            
         </main>
+
+        <footer class="footer">
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Matheus</h1>
+                        <span class="footer_subtitle">Frontend Developer Junior</span>
+                    </div>
+
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#qualification" class="footer_link">Qualificações</a>
+                        </li>
+
+                        <li>
+                            <a href="#portfolio" class="footer_link">Portfolio</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="footer_link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer_socials">
+                        <a href="https://www.linkedin.com/in/matheus-vieira-53aaa7188/" class="footer_social" target="_blank">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/matheusdias20" class="footer_social" target="_blank">
+                            <i class="uil uil-github"></i>
+                        </a>
+
+                        <a href="https://dev.to/matheusdias20" class="footer_social">
+                            <i class="uil uil-laptop-cloud"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <p class="footer_copy">&#169; Matheus. Todos os direitos reservados</p>
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup_icon"></i>
+        </a>
 
 
         <!-- SWIPPER JS -->
         <script src="js/swiper-bundle.min.js"></script>
 
         <script src="js/main.js"></script>
-        <!-- <script src=""></script> -->
-
     </body>
 </html>

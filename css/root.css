@@ -16,6 +16,11 @@
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #FFF;
 
+    --footer-color: hsl(var(--hue-color), 100%, 59%, 1);
+
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
 
     --body-font: 'Poppins', sans-serif;
 
@@ -59,4 +64,50 @@
             --smaller-font-size: .813rem;
         }
     }
+}
+
+/* Dark/Light theme */
+.nav_btns {
+    display: flex;
+    align-items: center;
+}
+
+.change-theme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;   
+}
+
+.change-theme:hover {
+    color: var(--first-color);
+}
+
+
+/* Dark theme */ 
+body.dark-theme {
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: #D0D3D4;
+    --input-color: #2b323d;
+    --body-color: #222831;
+    --container-color: #222831;
+
+    --footer-color: #2b323d;
+
+    --scroll-bar-color: #2b323d;
+    --scroll-thumb-color: #1b2027;
+}
+
+
+/* Scroll Bar  */
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: .5rem;
 }
