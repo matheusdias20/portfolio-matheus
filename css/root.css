@@ -111,3 +111,7 @@ body.dark-theme {
     background-color: var(--scroll-thumb-color);
     border-radius: .5rem;
 }
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-color-light);
+}

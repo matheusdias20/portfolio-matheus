@@ -285,7 +285,7 @@ li .active-link {
 }
 
 .about_description {
-    text-align: center;
+    text-align: justify;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -617,6 +617,7 @@ li .active-link {
     border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
+    border: 2px solid var(--container-color);
 }
 
 .scrollup:hover {
@@ -625,7 +626,7 @@ li .active-link {
 
 .scrollup_icon {
     font-size: 1.5rem;
-    color: #FFF;
+    color: var(--container-color);
 }
 
 .show-scroll {
