@@ -8,7 +8,15 @@ html {
     scroll-behavior: smooth;
 }
 
+button {
+    cursor: pointer;
+    color: var(--first-color);
+    border: none;
+}
 
+span {
+    font-weight: bold;
+}
 
 body {
     margin: 0 0 var(--header-height) 0;
@@ -116,7 +124,7 @@ li .active-link {
 }
 
 .nav_log:hover {
-    color: var(--first-color)
+    color: var(--first-color);
 }
 
 .nav_toggle {
