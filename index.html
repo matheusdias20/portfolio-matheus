@@ -1,1178 +1,1551 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="assets/img/icon-men.ico">
-        
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/icon-men.ico" />
 
-        <!-- SWIPPER CSS -->
-        <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <!-- SWIPPER CSS -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
 
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/root.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/media-queries.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-        <!-- UNICONS -->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-        
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
 
-        <title>Portfolio Website</title>
-        <link rel="stylesheet" href="">
-    </head>
+    <!-- UNICONS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
 
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav_logo">Matheus</a>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="" />
+  </head>
 
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav_list grid">
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link active-link">
-                                <i class="uil uil-estate nav_icon"></i> Home
-                            </a>
-                        </li>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">Matheus</a>
 
-                        <li class="nav_item">
-                            <a href="#about" class="nav_link">
-                                <i class="uil uil-user nav_icon"></i> Sobre
-                            </a>
-                        </li>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list grid">
+            <li class="nav_item">
+              <a href="#home" class="nav_link active-link">
+                <i class="uil uil-estate nav_icon"></i> Home
+              </a>
+            </li>
 
-                        <li class="nav_item">
-                            <a href="#languagens" class="nav_link">
-                                <i class="uil uil-file-edit-alt nav_icon"></i> Skills
-                            </a>
-                        </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">
+                <i class="uil uil-user nav_icon"></i> Sobre
+              </a>
+            </li>
 
-                        <li class="nav_item">
-                            <a href="#qualification" class="nav_link">
-                                <i class="uil uil-briefcase-alt nav_icon"></i> Qualificações
-                            </a>
-                        </li>
+            <li class="nav_item">
+              <a href="#languagens" class="nav_link">
+                <i class="uil uil-file-edit-alt nav_icon"></i> Skills
+              </a>
+            </li>
 
-                        <li class="nav_item">
-                            <a href="#portfolio" class="nav_link">
-                                <i class="uil uil-scenery nav_icon"></i> Portfolio
-                            </a>
-                        </li>
+            <li class="nav_item">
+              <a href="#qualification" class="nav_link">
+                <i class="uil uil-briefcase-alt nav_icon"></i> Qualificações
+              </a>
+            </li>
 
-                        <li class="nav_item">
-                            <a href="#contact" class="nav_link">
-                                <i class="uil uil-message nav_icon"></i> Contato
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav_close" id="nav-close"></i>
-                </div>
+            <li class="nav_item">
+              <a href="#portfolio" class="nav_link">
+                <i class="uil uil-scenery nav_icon"></i> Portfolio
+              </a>
+            </li>
 
-                <div class="nav_btns">
-                    <!-- Mudando o tema -->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">
+                <i class="uil uil-message nav_icon"></i> Contato
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav_close" id="nav-close"></i>
+        </div>
 
+        <div class="nav_btns">
+          <!-- Mudando o tema -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-                    <div class="nav_toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <main class="main">
-            <section class="home section" id="home">
-                <div class="home_container container grid">
-                    <div class="home_content grid">
-                        <div class="home_social">
-                            <a href="https://www.linkedin.com/in/matheus-vieira-53aaa7188/" class="home_social-icon" target="_blank">
-                                <i class="uil uil-linkedin"></i>
-                            </a>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content grid">
+            <div class="home_social">
+              <a
+                data-aos="fade-right"
+                data-aos-easing="ease-in-sine"
+                href="https://www.linkedin.com/in/matheus-vieira-53aaa7188/"
+                class="home_social-icon"
+                target="_blank"
+              >
+                <i class="uil uil-linkedin"></i>
+              </a>
 
-                            <a href="https://github.com/matheusdias20" class="home_social-icon" target="_blank">
-                                <i class="uil uil-github"></i>
-                            </a>
+              <a
+                data-aos="fade-right"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="100"
+                href="https://github.com/matheusdias20"
+                class="home_social-icon"
+                target="_blank"
+              >
+                <i class="uil uil-github"></i>
+              </a>
 
-                            <a href="https://dev.to/matheusdias20" class="home_social-icon" target="_blank">
-                                <i class="uil uil-laptop-cloud"></i>
-                            </a>
+              <a
+                data-aos="fade-right"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="200"
+                href="https://dev.to/matheusdias20"
+                class="home_social-icon"
+                target="_blank"
+              >
+                <i class="uil uil-laptop-cloud"></i>
+              </a>
 
-                            <a href="https://my-certificate.netlify.app/" class="home_social-icon" target="_blank">
-                                <i class="uil uil-award"></i>
-                            </a>
-                        </div>
+              <a
+                data-aos="fade-right"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="300"
+                href="https://my-certificate.netlify.app/"
+                class="home_social-icon"
+                target="_blank"
+              >
+                <i class="uil uil-award"></i>
+              </a>
+            </div>
 
-                        <div class="home_img">
-                            <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+            <div class="home_img" data-aos="fade-left">
+              <svg
+                class="home_blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                     97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home_blob-img" x='12' y='18' xlink:href="assets/img/perfil.gif"/>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="home_data">
-                            <h1 class="home_title">Hello, I'am Matheus</h1>
-                            <h3 class="home_subtitle">Frontend Developer Junior</h3>
-                            <p class="home_description"></p>
-                            <a href="#contact" class="button button-flex">
-                               Entre em contato <i class="uil uil-message button_icon"></i>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="home_scroll">
-                        <a href="#about" class="home_scroll-button button-flex">
-                            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
-                            <span class="home_scroll-name">Role para baixo</span>
-                            <i class="uil uil-arrow-down home_scroll-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about section" id="about">
-                <h2 class="section_title">Sobre</h2>
-                <span class="section_subtitle">Breve introdução</span>
-
-                <div class="about_container container grid">
-                    <img src="assets/img/about.png" alt="" class="about_img">
-
-                    <div class="about_data">
-                        <p class="about_description">
-                            Formado em Análise e Desenvolvimento de Sistemas pelo Centro Universitário Lusíada - UNILUS. Mais de cinco anos de experiência em âmbito de ensino educacional, adquirindo desenvolvimento em comunicação, criatividade, organização, lidar com problemas, adaptar-se a mudanças e pressão de situações adversas. 
-                        </p>
-
-                        <div class="about_buttons">
-                            <a download="" href="assets/pdf/curriculum-vitae.pdf" class="button button-flex">
-                                Download CV <i class="uil uil-download-alt button_icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="languagens section" id="languagens">
-                <h2 class="section_title">Skills</h2>
-                <span class="section_subtitle">Linguagens de Programação e Ferramentas</span>
-
-
-                <div class="languagens_container container grid">
-                    <div>
-                        <div class="languagens_content languagens_open">
-                            <div class="languagens_header">
-                                <i class="uil uil-brackets-curly languagens_icon"></i>
-
-                                <div>
-                                    <h1 class="languagens_title">Frontend Development</h1>
-                                </div>
-
-                                <i class="uil uil-angle-down languagens_arrow"></i>
-                            </div>
-
-                            <div class="languagens_list grid">
-                                <div class="languagens_data">
-                                    <div class="languagens_titles">
-                                        <i class="uil uil-html5-alt languagens_icon"></i>
-                                        <h3 class="languagens_name"> HTML</h3>
-                                    </div>
-
-                                    <div class="languagens_titles">
-                                        <i class="uil uil-programming-language languagens_icon"></i>
-                                        <h3 class="languagens_name"> CSS</h3>
-                                    </div>
-
-                                    <div class="languagens_titles">
-                                        <i class="uil uil-java-script languagens_icon"></i>
-                                        <h3 class="languagens_name"> JavaScript</h3>
-                                    </div>
-
-                                    <div class="languagens_titles">
-                                        <i class="uil uil-react languagens_icon"></i>
-                                        <h3 class="languagens_name"> REACT</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="languagens_content languagens_close">
-                            <div class="languagens_header">
-                                <i class="uil uil-server-network languagens_icon"></i>
-
-                                <div>
-                                    <h1 class="languagens_title">Backend Development</h1>
-                                </div>
-
-                                <i class="uil uil-angle-down languagens_arrow"></i>
-                            </div>
-
-                            <div class="languagens_list grid">
-                                <div class="languagens_data">
-                                    <div class="languagens_titles">
-                                        <i class="uil uil-coffee languagens_icon"></i>
-                                        <h3 class="languagens_name"> Java</h3>
-                                    </div>
-
-                                    <div class="languagens_titles">
-                                        <i class="uil uil-polygon languagens_icon"></i>
-                                        <h3 class="languagens_name"> Node JS</h3>
-                                    </div>
-
-                                    <div class="languagens_titles">
-                                        <i class="uil uil-cloud-database-tree languagens_icon"></i>
-                                        <h3 class="languagens_name"> Heroku</h3>
-                                    </div>
-
-                                    <div class="languagens_titles">
-                                        <i class="uil uil-fire languagens_icon"></i>
-                                        <h3 class="languagens_name"> Firebase</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="qualification section" id="qualification">
-                <h2 class="section_title">Qualificações</h2>
-                <span class="section_subtitle">Minha jornada</span>
-
-                <div class="qualification_container container">
-                    <div class="qualification_tabs">
-                        <div class="qualification_button button-flex qualification_active" data-target="#experience">
-                            <i class="uil uil-briefcase-alt qualification_icon"></i>
-                            Experiência
-                        </div>
-
-                        <div class="qualification_button button-flex" data-target="#courses">
-                            <i class="uil uil-book-alt qualification_icon"></i>
-                            Cursos
-                        </div>
-                    </div>
-
-                    <div class="qualification_sections">
-                        <div class="qualification_content qualification_active" data-content id="experience">
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Técnico Residente</h3>
-                                    <span class="qualification_subtitle">Selbetti</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2017 - presente
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Atendente</h3>
-                                    <span class="qualification_subtitle">Campello IT</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2015 - 2017
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Estagiário - Técnico de Laboratório</h3>
-                                    <span class="qualification_subtitle">Colégio Objetivo</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2014 - 2015
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="qualification_content" data-content id="courses">
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Aplicações avançadas com Angular</h3>
-                                    <span class="qualification_subtitle">Digital Innovation One</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Técnicas avançadas em Angular 8</h3>
-                                    <span class="qualification_subtitle">Digital Innovation One</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2021
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Introdução ao Angular 8</h3>
-                                    <span class="qualification_subtitle">Digital Innovation One</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Fundamentos de Arquitetura de Sistemas</h3>
-                                    <span class="qualification_subtitle">Digital Innovation One</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2021
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">JavaScript ES6 essencial</h3>
-                                    <span class="qualification_subtitle">Digital Innovation One</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Estrutura de Dados e Algoritmos</h3>
-                                    <span class="qualification_subtitle">Digital Innovation One</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2021
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Lógica de programação essencial</h3>
-                                    <span class="qualification_subtitle">Digital Innovation One</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Bootcamp de Cloud</h3>
-                                    <span class="qualification_subtitle">Cloud Treinamento</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2021
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">OKR Essencial</h3>
-                                    <span class="qualification_subtitle">Feedz Educa</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">UI/UX Basics Experience & Prototype</h3>
-                                    <span class="qualification_subtitle">CEL.LEP</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Android Studio - Kotlin</h3>
-                                    <span class="qualification_subtitle">CEL.LEP</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">GIT e Github: Controle e compartilhe seu código</h3>
-                                    <span class="qualification_subtitle">Alura</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">CCNAv7: Introduction to Networks</h3>
-                                    <span class="qualification_subtitle">CISCO - Networking Academy</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Introduction to Cybersecurity</h3>
-                                    <span class="qualification_subtitle">CISCO - Networking Academy</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Cybersecurity Essentials</h3>
-                                    <span class="qualification_subtitle">CISCO - Networking Academy</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Tesla Case - Price, Value and Performance</h3>
-                                    <span class="qualification_subtitle">IBS - International Business School</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Corporate Social Responsibility - The Microsoft Case</h3>
-                                    <span class="qualification_subtitle">IBS - International Business School</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Porter's Competitive Strategy - The Netflix Case</h3>
-                                    <span class="qualification_subtitle">IBS - International Business School</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Desenvolvimento Web Front End</h3>
-                                    <span class="qualification_subtitle">Estação Hack from Facebook</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Introdução à Linguagem e Numpy</h3>
-                                    <span class="qualification_subtitle">Alura</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Python Pandas: Tratando e Analisando Dados</h3>
-                                    <span class="qualification_subtitle">Alura</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Data Analysis: Introdução a Séries Temporais e Análises</h3>
-                                    <span class="qualification_subtitle">Alura</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Regressão Linear: Técnicas Avançadas de Modelagem</h3>
-                                    <span class="qualification_subtitle">Alura</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Regressão Linear: Testando Relações e Prevendo Resultados</h3>
-                                    <span class="qualification_subtitle">Alura</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Data Visualization: Escolhendo o Melhor Gráficos</h3>
-                                    <span class="qualification_subtitle">Alura</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Data Visualization: Introdução ao Design de Gráficos</h3>
-                                    <span class="qualification_subtitle">Alura</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Introdução a Testes Estatísticos com Python</h3>
-                                    <span class="qualification_subtitle">Alura</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Introdução ao Agile Scrum</h3>
-                                    <span class="qualification_subtitle">Voitto</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Introdução ao Power BI</h3>
-                                    <span class="qualification_subtitle">Voitto</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Power BI na Gestão</h3>
-                                    <span class="qualification_subtitle">Cursa</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Power BI para Data Science</h3>
-                                    <span class="qualification_subtitle">Data Science Academy</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Human Hacks</h3>
-                                    <span class="qualification_subtitle">Slash/education</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Power BI para Data Science</h3>
-                                    <span class="qualification_subtitle">Data Science Academy</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-
-                                <div class="qualification-pl">
-                                    <h3 class="qualification_title">Inteligência Artifical Fundamentos</h3>
-                                    <span class="qualification_subtitle">Data Science Academy</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                         2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Fundamentos Big Data 2.0</h3>
-                                    <span class="qualification_subtitle">Data Science Academy</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2019
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section_title">Portfolio</h2>
-                <span class="section_subtitle">Alguns projetos desenvolvidos</span>
-
-                <div class="portfolio_container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/portfolio/climatempo-app.png" alt="" class="portfolio_img">
-
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Climatempo</h3>
-                                <p class="portfolio_description">Aplicativo mostra a temperatura da cidade e/ou país</p>
-                                <a href="https://climatempo-app.netlify.app/" target="_blank" class="button button-flex button-small portfolio_button">
-                                    Visitar <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/portfolio/controle_de_filmes-app.png" alt="" class="portfolio_img">
-
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Controle de Filmes</h3>
-                                <p class="portfolio_description">Aplicativo criado para controle de filmes, separados por: Filmes para Assistir e Filmes Assistidos, armazenados Local Storage</p>
-                                <a href="https://controlmovies.netlify.app/" target="_blank" class="button button-flex button-small portfolio_button">
-                                    Visitar <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/portfolio/netflix.png" alt="" class="portfolio_img">
-
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Clone Netflix</h3>
-                                <p class="portfolio_description">Clone da página de filmes da Netflix com suas respectivas categorias</p>
-                                <a href="http://netflix-react-matheusdias20.vercel.app/" target="_blank" class="button button-flex button-small portfolio_button">
-                                    Visitar <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/portfolio/ds-delivery-app.png" alt="" class="portfolio_img">
-
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">DS Delivery</h3>
-                                <p class="portfolio_description">Aplicativo desenvolvido durante a 2ª edição do evento Semana DevSuperior. O Projeto consiste em um sistema de registro e entrega de pedidos</p>
-                                <a href="https://sds2-ds-deliver.netlify.app/" target="_blank" class="button button-flex button-small portfolio_button">
-                                    Visitar <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/portfolio/quiz_starwars-app.png" alt="" class="portfolio_img">
-
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Quiz Star Wars</h3>
-                                <p class="portfolio_description">Site desenvolvido durante a 2ª Imersão React. Utilizando REACT / Next.JS. Aplicativo de quiz sobre Star Wars</p>
-                                <a href="https://quiz-starwars-matheusdias20.vercel.app/" target="_blank" class="button button-flex button-small portfolio_button">
-                                    Visitar <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/portfolio/dev_finance-app.png" alt="" class="portfolio_img">
-
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Dev Finance</h3>
-                                <p class="portfolio_description">Site desenvolvido durante a Maratona Discover da Rocketseat. Aplicativo de controle de finanças</p>
-                                <a href="https://dev-finance-control.netlify.app/" target="_blank" class="button button-flex button-small portfolio_button">
-                                    Visitar <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/portfolio/master_burguer_013-app.png" alt="" class="portfolio_img">
-
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Master Burguer 013</h3>
-                                <p class="portfolio_description">Site desenvolvido para a empresa Master Burguer 013</p>
-                                <a href="https://master-burguer-013.netlify.app/" target="_blank" class="button button-flex button-small portfolio_button">
-                                    Visitar <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/portfolio/monitoramento_covid-app.png" alt="" class="portfolio_img">
-
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Monitoramento COVID 19</h3>
-                                <p class="portfolio_description">Site desenvolvido para monitoramento do COVID 19 no Brasil e no mundo</p>
-                                <a href="https://monitoramento-v2.netlify.app/" target="_blank" class="button button-flex button-small portfolio_button">
-                                    Visitar <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/portfolio/podflix-app.png" alt="" class="portfolio_img">
-
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Podflix</h3>
-                                <p class="portfolio_description">Desenvolvimento na Imersão React da Alura</p>
-                                <a href="https://podflix-ten.vercel.app/" target="_blank" class="button button-flex button-small portfolio_button">
-                                    Visitar <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/portfolio/big_game_survey-app.png" alt="" class="portfolio_img">
-
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Big Game Survey</h3>
-                                <p class="portfolio_description">Aplicativo Web usando Java com Spring Boot no BackEnd, TypeScript com ReactJS no FrontEnd</p>
-                                <a href="https://sds1.vercel.app/" target="_blank" class="button button-flex button-small portfolio_button">
-                                    Visitar <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
-            <section class="contact section" id="contact">
-                <h2 class="section_title">Contato</h2>
-                <span class="section_subtitle">Entre em Contato</span>
-                
-                <div class="contact_container container grid">
-                    <div class="contact_person">
-                        <div class="contact_information">
-                            <i class="uil uil-phone contact_icon"></i>
-
-                            <div>
-                                <h3 class="contact_title">Me ligue</h3>
-                                <span class="contact_subtitle">(13) 9 9778-6267</span>
-                            </div>
-                        </div>
-
-                        <div class="contact_information">
-                            <i class="uil uil-envelope-upload contact_icon"></i>
-
-                            <div>
-                                <h3 class="contact_title">Email</h3>
-                                <span class="contact_subtitle">mvdias20@gmail.com</span>
-                            </div>
-                        </div>
-
-                        <div class="contact_information">
-                            <i class="uil uil-map-marker contact_icon"></i>
-
-                            <div>
-                                <h3 class="contact_title">Cidade</h3>
-                                <span class="contact_subtitle">Santos - São Paulo</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <form target="_blank" action="https://formsubmit.co/mvdias20@gmail.com" method="POST" class="contact_form grid">
-                        <div class="contact_inputs grid">
-                            <div class="contact_content">
-                                <label for="" class="contact_label">Nome
-                                <input type="text" name="name" class="contact_input" required></label>
-                            </div>
-
-                            <div class="contact_content">
-                                <label for="" class="contact_label">Email
-                                <input type="email" name="email" class="contact_input" required></label>
-                            </div>
-                        </div>
-
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Assunto
-                            <input type="text" name="subject" class="contact_input" required></label>
-                        </div>
-
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Mensagem
-                            <textarea name="message" id="" cols="0" rows="7" class="contact_input" required></textarea></label>
-                        </div>
-
-                        <div>
-                            <button type="submit" class="button button-flex" name="_next" value="https://portfolio-website-matheus.netlify.app/thanks-contact.html">
-                                <span>Enviar</span> 
-                                <i class="uil uil-message button_icon"></i>
-                            </button>
-                        </div>
-
-                        
-
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer_bg">
-                <div class="footer_container container grid">
-                    <div>
-                        <h1 class="footer_title">Matheus</h1>
-                        <span class="footer_subtitle">Frontend Developer Junior</span>
-                    </div>
-
-                    <ul class="footer_links">
-                        <li>
-                            <a href="#qualification" class="footer_link">Qualificações</a>
-                        </li>
-
-                        <li>
-                            <a href="#portfolio" class="footer_link">Portfolio</a>
-                        </li>
-
-                        <li>
-                            <a href="https://my-certificate.netlify.app/" target="_blank" class="footer_link">Certificado</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer_socials">
-                        <a href="https://www.linkedin.com/in/matheus-vieira-53aaa7188/" class="footer_social" target="_blank">
-                            <i class="uil uil-linkedin"></i>
-                        </a>
-
-                        <a href="https://github.com/matheusdias20" class="footer_social" target="_blank">
-                            <i class="uil uil-github"></i>
-                        </a>
-
-                        <a href="https://dev.to/matheusdias20" class="footer_social" target="_blank">
-                            <i class="uil uil-laptop-cloud"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <p class="footer_copy">&#169; Matheus. Todos os direitos reservados</p>
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home_blob-img"
+                    x="12"
+                    y="18"
+                    xlink:href="assets/img/perfil.gif"
+                  />
+                </g>
+              </svg>
             </div>
-        </footer>
 
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup_icon"></i>
-        </a>
+            <div class="home_data" data-aos="fade-right">
+              <h1 class="home_title">Hello, I'am Matheus</h1>
+              <h3 class="home_subtitle">Frontend Developer Junior</h3>
+              <p class="home_description"></p>
+              <a href="#contact" class="button button-flex">
+                Entre em contato <i class="uil uil-message button_icon"></i>
+              </a>
+            </div>
+          </div>
 
+          <div class="home_scroll">
+            <a
+              href="#about"
+              class="home_scroll-button button-flex"
+              data-aos="zoom-in"
+            >
+              <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+              <span class="home_scroll-name">Role para baixo</span>
+              <i class="uil uil-arrow-down home_scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <!-- SWIPPER JS -->
-        <script src="js/swiper-bundle.min.js"></script>
+      <section class="about section" id="about">
+        <h2 class="section_title">Sobre</h2>
+        <span class="section_subtitle">Breve introdução</span>
 
-        <script src="js/main.js"></script>
-    </body>
+        <div class="about_container container grid">
+          <img
+            src="assets/img/about.png"
+            alt=""
+            class="about_img"
+            data-aos="fade-up"
+          />
+
+          <div class="about_data">
+            <p class="about_description" data-aos="fade-down">
+              Formado em Análise e Desenvolvimento de Sistemas pelo Centro
+              Universitário Lusíada - UNILUS. Mais de cinco anos de experiência
+              em âmbito de ensino educacional, adquirindo desenvolvimento em
+              comunicação, criatividade, organização, lidar com problemas,
+              adaptar-se a mudanças e pressão de situações adversas.
+            </p>
+
+            <div class="about_buttons" data-aos="fade-left">
+              <a
+                download=""
+                href="assets/pdf/curriculum-vitae.pdf"
+                class="button button-flex"
+              >
+                Download CV <i class="uil uil-download-alt button_icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="languagens section" id="languagens">
+        <h2 class="section_title">Skills</h2>
+        <span class="section_subtitle"
+          >Linguagens de Programação e Ferramentas</span
+        >
+
+        <div class="languagens_container container grid">
+          <div>
+            <div class="languagens_content languagens_open">
+              <div class="languagens_header">
+                <i class="uil uil-brackets-curly languagens_icon"></i>
+
+                <div>
+                  <h1 class="languagens_title">Frontend Development</h1>
+                </div>
+
+                <i class="uil uil-angle-down languagens_arrow"></i>
+              </div>
+
+              <div class="languagens_list grid">
+                <div class="languagens_data">
+                  <div class="languagens_titles">
+                    <i class="uil uil-html5-alt languagens_icon"></i>
+                    <h3 class="languagens_name">HTML</h3>
+                  </div>
+
+                  <div class="languagens_titles">
+                    <i class="uil uil-programming-language languagens_icon"></i>
+                    <h3 class="languagens_name">CSS</h3>
+                  </div>
+
+                  <div class="languagens_titles">
+                    <i class="uil uil-java-script languagens_icon"></i>
+                    <h3 class="languagens_name">JavaScript</h3>
+                  </div>
+
+                  <div class="languagens_titles">
+                    <i class="uil uil-react languagens_icon"></i>
+                    <h3 class="languagens_name">REACT</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="languagens_content languagens_close">
+              <div class="languagens_header">
+                <i class="uil uil-server-network languagens_icon"></i>
+
+                <div>
+                  <h1 class="languagens_title">Backend Development</h1>
+                </div>
+
+                <i class="uil uil-angle-down languagens_arrow"></i>
+              </div>
+
+              <div class="languagens_list grid">
+                <div class="languagens_data">
+                  <div class="languagens_titles">
+                    <i class="uil uil-coffee languagens_icon"></i>
+                    <h3 class="languagens_name">Java</h3>
+                  </div>
+
+                  <div class="languagens_titles">
+                    <i class="uil uil-polygon languagens_icon"></i>
+                    <h3 class="languagens_name">Node JS</h3>
+                  </div>
+
+                  <div class="languagens_titles">
+                    <i class="uil uil-cloud-database-tree languagens_icon"></i>
+                    <h3 class="languagens_name">Heroku</h3>
+                  </div>
+
+                  <div class="languagens_titles">
+                    <i class="uil uil-fire languagens_icon"></i>
+                    <h3 class="languagens_name">Firebase</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="qualification section" id="qualification">
+        <h2 class="section_title">Qualificações</h2>
+        <span class="section_subtitle">Minha jornada</span>
+
+        <div class="qualification_container container">
+          <div class="qualification_tabs">
+            <div
+              data-aos="fade-right"
+              data-aos-easing="ease-in-sine"
+              class="qualification_button button-flex qualification_active"
+              data-target="#experience"
+            >
+              <i class="uil uil-briefcase-alt qualification_icon"></i>
+              Experiência
+            </div>
+
+            <div
+              data-aos="fade-left"
+              data-aos-easing="ease-in-sine"
+              class="qualification_button button-flex"
+              data-target="#courses"
+            >
+              <i class="uil uil-book-alt qualification_icon"></i>
+              Cursos
+            </div>
+          </div>
+
+          <div class="qualification_sections">
+            <div
+              class="qualification_content qualification_active"
+              data-content
+              id="experience"
+            >
+              <div class="qualification_data">
+                <div
+                  data-aos="fade-right"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="100"
+                >
+                  <h3 class="qualification_title">Técnico Residente</h3>
+                  <span class="qualification_subtitle">Selbetti</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2017 - presente
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div
+                  class="qualification-pl"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="200"
+                >
+                  <h3 class="qualification_title">Atendente</h3>
+                  <span class="qualification_subtitle">Campello IT</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2015 - 2017
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div
+                  data-aos="fade-right"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="300"
+                >
+                  <h3 class="qualification_title">
+                    Estagiário - Técnico de Laboratório
+                  </h3>
+                  <span class="qualification_subtitle">Colégio Objetivo</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2014 - 2015
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qualification_content" data-content id="courses">
+              <div class="qualification_data">
+                <div data-aos="zoom-in-right">
+                  <h3 class="qualification_title">
+                    Aplicações avançadas com Angular
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >Digital Innovation One</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    Técnicas avançadas em Angular 8
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >Digital Innovation One</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Introdução ao Angular 8</h3>
+                  <span class="qualification_subtitle"
+                    >Digital Innovation One</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    Fundamentos de Arquitetura de Sistemas
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >Digital Innovation One</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">JavaScript ES6 essencial</h3>
+                  <span class="qualification_subtitle"
+                    >Digital Innovation One</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    Estrutura de Dados e Algoritmos
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >Digital Innovation One</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">
+                    Lógica de programação essencial
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >Digital Innovation One</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">Bootcamp de Cloud</h3>
+                  <span class="qualification_subtitle">Cloud Treinamento</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">OKR Essencial</h3>
+                  <span class="qualification_subtitle">Feedz Educa</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    UI/UX Basics Experience & Prototype
+                  </h3>
+                  <span class="qualification_subtitle">CEL.LEP</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Android Studio - Kotlin</h3>
+                  <span class="qualification_subtitle">CEL.LEP</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    GIT e Github: Controle e compartilhe seu código
+                  </h3>
+                  <span class="qualification_subtitle">Alura</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">
+                    CCNAv7: Introduction to Networks
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >CISCO - Networking Academy</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    Introduction to Cybersecurity
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >CISCO - Networking Academy</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Cybersecurity Essentials</h3>
+                  <span class="qualification_subtitle"
+                    >CISCO - Networking Academy</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    Tesla Case - Price, Value and Performance
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >IBS - International Business School</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">
+                    Corporate Social Responsibility - The Microsoft Case
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >IBS - International Business School</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    Porter's Competitive Strategy - The Netflix Case
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >IBS - International Business School</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">
+                    Desenvolvimento Web Front End
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >Estação Hack from Facebook</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    Introdução à Linguagem e Numpy
+                  </h3>
+                  <span class="qualification_subtitle">Alura</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">
+                    Python Pandas: Tratando e Analisando Dados
+                  </h3>
+                  <span class="qualification_subtitle">Alura</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    Data Analysis: Introdução a Séries Temporais e Análises
+                  </h3>
+                  <span class="qualification_subtitle">Alura</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">
+                    Regressão Linear: Técnicas Avançadas de Modelagem
+                  </h3>
+                  <span class="qualification_subtitle">Alura</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    Regressão Linear: Testando Relações e Prevendo Resultados
+                  </h3>
+                  <span class="qualification_subtitle">Alura</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">
+                    Data Visualization: Escolhendo o Melhor Gráficos
+                  </h3>
+                  <span class="qualification_subtitle">Alura</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    Data Visualization: Introdução ao Design de Gráficos
+                  </h3>
+                  <span class="qualification_subtitle">Alura</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">
+                    Introdução a Testes Estatísticos com Python
+                  </h3>
+                  <span class="qualification_subtitle">Alura</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">Introdução ao Agile Scrum</h3>
+                  <span class="qualification_subtitle">Voitto</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Introdução ao Power BI</h3>
+                  <span class="qualification_subtitle">Voitto</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">Power BI na Gestão</h3>
+                  <span class="qualification_subtitle">Cursa</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">
+                    Power BI para Data Science
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >Data Science Academy</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">Human Hacks</h3>
+                  <span class="qualification_subtitle">Slash/education</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">
+                    Power BI para Data Science
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >Data Science Academy</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div class="qualification-pl">
+                  <h3 class="qualification_title">
+                    Inteligência Artifical Fundamentos
+                  </h3>
+                  <span class="qualification_subtitle"
+                    >Data Science Academy</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Fundamentos Big Data 2.0</h3>
+                  <span class="qualification_subtitle"
+                    >Data Science Academy</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2019
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section_title">Portfolio</h2>
+        <span class="section_subtitle">Alguns projetos desenvolvidos</span>
+
+        <div class="portfolio_container container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="assets/portfolio/climatempo-app.png"
+                alt=""
+                class="portfolio_img"
+              />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Climatempo</h3>
+                <p class="portfolio_description">
+                  Aplicativo mostra a temperatura da cidade e/ou país
+                </p>
+                <a
+                  href="https://climatempo-app.netlify.app/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio_button"
+                >
+                  Visitar <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="assets/portfolio/controle_de_filmes-app.png"
+                alt=""
+                class="portfolio_img"
+              />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Controle de Filmes</h3>
+                <p class="portfolio_description">
+                  Aplicativo criado para controle de filmes, separados por:
+                  Filmes para Assistir e Filmes Assistidos, armazenados Local
+                  Storage
+                </p>
+                <a
+                  href="https://controlmovies.netlify.app/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio_button"
+                >
+                  Visitar <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="assets/portfolio/netflix.png"
+                alt=""
+                class="portfolio_img"
+              />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Clone Netflix</h3>
+                <p class="portfolio_description">
+                  Clone da página de filmes da Netflix com suas respectivas
+                  categorias
+                </p>
+                <a
+                  href="http://netflix-react-matheusdias20.vercel.app/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio_button"
+                >
+                  Visitar <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="assets/portfolio/ds-delivery-app.png"
+                alt=""
+                class="portfolio_img"
+              />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">DS Delivery</h3>
+                <p class="portfolio_description">
+                  Aplicativo desenvolvido durante a 2ª edição do evento Semana
+                  DevSuperior. O Projeto consiste em um sistema de registro e
+                  entrega de pedidos
+                </p>
+                <a
+                  href="https://sds2-ds-deliver.netlify.app/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio_button"
+                >
+                  Visitar <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="assets/portfolio/quiz_starwars-app.png"
+                alt=""
+                class="portfolio_img"
+              />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Quiz Star Wars</h3>
+                <p class="portfolio_description">
+                  Site desenvolvido durante a 2ª Imersão React. Utilizando REACT
+                  / Next.JS. Aplicativo de quiz sobre Star Wars
+                </p>
+                <a
+                  href="https://quiz-starwars-matheusdias20.vercel.app/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio_button"
+                >
+                  Visitar <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="assets/portfolio/dev_finance-app.png"
+                alt=""
+                class="portfolio_img"
+              />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Dev Finance</h3>
+                <p class="portfolio_description">
+                  Site desenvolvido durante a Maratona Discover da Rocketseat.
+                  Aplicativo de controle de finanças
+                </p>
+                <a
+                  href="https://dev-finance-control.netlify.app/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio_button"
+                >
+                  Visitar <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="assets/portfolio/master_burguer_013-app.png"
+                alt=""
+                class="portfolio_img"
+              />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Master Burguer 013</h3>
+                <p class="portfolio_description">
+                  Site desenvolvido para a empresa Master Burguer 013
+                </p>
+                <a
+                  href="https://master-burguer-013.netlify.app/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio_button"
+                >
+                  Visitar <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="assets/portfolio/monitoramento_covid-app.png"
+                alt=""
+                class="portfolio_img"
+              />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Monitoramento COVID 19</h3>
+                <p class="portfolio_description">
+                  Site desenvolvido para monitoramento do COVID 19 no Brasil e
+                  no mundo
+                </p>
+                <a
+                  href="https://monitoramento-v2.netlify.app/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio_button"
+                >
+                  Visitar <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="assets/portfolio/podflix-app.png"
+                alt=""
+                class="portfolio_img"
+              />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Podflix</h3>
+                <p class="portfolio_description">
+                  Desenvolvimento na Imersão React da Alura
+                </p>
+                <a
+                  href="https://podflix-ten.vercel.app/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio_button"
+                >
+                  Visitar <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="assets/portfolio/big_game_survey-app.png"
+                alt=""
+                class="portfolio_img"
+              />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Big Game Survey</h3>
+                <p class="portfolio_description">
+                  Aplicativo Web usando Java com Spring Boot no BackEnd,
+                  TypeScript com ReactJS no FrontEnd
+                </p>
+                <a
+                  href="https://sds1.vercel.app/"
+                  target="_blank"
+                  class="button button-flex button-small portfolio_button"
+                >
+                  Visitar <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contato</h2>
+        <span class="section_subtitle">Entre em Contato</span>
+
+        <div class="contact_container container grid">
+          <div class="contact_person">
+            <div class="contact_information" data-aos="zoom-in">
+              <i class="uil uil-phone contact_icon"></i>
+
+              <div>
+                <h3 class="contact_title">Me ligue</h3>
+                <span class="contact_subtitle">(13) 9 9778-6267</span>
+              </div>
+            </div>
+
+            <div
+              class="contact_information"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <i class="uil uil-envelope-upload contact_icon"></i>
+
+              <div>
+                <h3 class="contact_title">Email</h3>
+                <span class="contact_subtitle">mvdias20@gmail.com</span>
+              </div>
+            </div>
+
+            <div
+              class="contact_information"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <i class="uil uil-map-marker contact_icon"></i>
+
+              <div>
+                <h3 class="contact_title">Cidade</h3>
+                <span class="contact_subtitle">Santos - São Paulo</span>
+              </div>
+            </div>
+          </div>
+
+          <form
+            target="_blank"
+            action="https://formsubmit.co/mvdias20@gmail.com"
+            method="POST"
+            class="contact_form grid"
+          >
+            <div class="contact_inputs grid">
+              <div
+                class="contact_content"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                <label for="" class="contact_label"
+                  >Nome
+                  <input type="text" name="name" class="contact_input" required
+                /></label>
+              </div>
+
+              <div
+                class="contact_content"
+                data-aos="fade-left"
+                data-aos-delay="100"
+              >
+                <label for="" class="contact_label"
+                  >Email
+                  <input
+                    type="email"
+                    name="email"
+                    class="contact_input"
+                    required
+                /></label>
+              </div>
+            </div>
+
+            <div
+              class="contact_content"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <label for="" class="contact_label"
+                >Assunto
+                <input
+                  type="text"
+                  name="subject"
+                  class="contact_input"
+                  required
+              /></label>
+            </div>
+
+            <div
+              class="contact_content"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <label for="" class="contact_label"
+                >Mensagem
+                <textarea
+                  name="message"
+                  id=""
+                  cols="0"
+                  rows="7"
+                  class="contact_input"
+                  required
+                ></textarea>
+              </label>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="400">
+              <button
+                type="submit"
+                class="button button-flex"
+                name="_next"
+                value="https://portfolio-website-matheus.netlify.app/thanks-contact.html"
+              >
+                <span>Enviar</span>
+                <i class="uil uil-message button_icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_bg">
+        <div class="footer_container container grid">
+          <div data-aos="zoom-in" data-aos-delay="400">
+            <h1 class="footer_title">Matheus</h1>
+            <span class="footer_subtitle">Frontend Developer Junior</span>
+          </div>
+
+          <ul class="footer_links">
+            <li>
+              <a
+                href="#qualification"
+                class="footer_link"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                >Qualificações</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#portfolio"
+                class="footer_link"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                >Portfolio</a
+              >
+            </li>
+
+            <li data-aos="zoom-in" data-aos-delay="600">
+              <a
+                href="https://my-certificate.netlify.app/"
+                target="_blank"
+                class="footer_link"
+                >Certificado</a
+              >
+            </li>
+          </ul>
+
+          <div class="footer_socials">
+            <a
+              data-aos="zoom-in"
+              data-aos-delay="700"
+              href="https://www.linkedin.com/in/matheus-vieira-53aaa7188/"
+              class="footer_social"
+              target="_blank"
+            >
+              <i class="uil uil-linkedin"></i>
+            </a>
+
+            <a
+              data-aos="zoom-in"
+              data-aos-delay="800"
+              href="https://github.com/matheusdias20"
+              class="footer_social"
+              target="_blank"
+            >
+              <i class="uil uil-github"></i>
+            </a>
+
+            <a
+              data-aos="zoom-in"
+              data-aos-delay="900"
+              href="https://dev.to/matheusdias20"
+              class="footer_social"
+              target="_blank"
+            >
+              <i class="uil uil-laptop-cloud"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer_copy" data-aos="fade-up">
+          &#169; Matheus. Todos os direitos reservados
+        </p>
+      </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+
+    <!-- SWIPPER JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
