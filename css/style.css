@@ -52,6 +52,7 @@ li .active-link {
 /* Adicionando sombra superior no header */
 .scroll-header {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+    background-color: var(--body-color);
     transition: .3s;
 }
 
@@ -70,8 +71,10 @@ li .active-link {
     }
 }
 
+
 .section {
     padding: 2rem;
+    z-index: 100;
 }
 
 .section_title {
@@ -106,7 +109,6 @@ li .active-link {
     bottom: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color)
 }
 
 .nav {
@@ -176,6 +178,8 @@ li .active-link {
 .show-menu {
     bottom: 0;
 }
+
+
 
 
 /* HOME */
@@ -610,7 +614,8 @@ li .active-link {
 .footer_title,
 .footer_subtitle,
 .footer_link,
-.footer_social {
+.footer_social,
+.footer_copy {
     color: #FFF;
 }
 

@@ -157,10 +157,10 @@ a{
 .contact-sent_title,
 .contact-sent_subtitle,
 .contact-sent_link,
-.contact-sent_social {
+.contact-sent_social,
+.footer_copy {
     color: #FFF;
 }
-
 
 
 @media screen and (max-width: 382px) {

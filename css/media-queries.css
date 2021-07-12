@@ -218,6 +218,11 @@
     }
 }
 
+@media screen and (max-width: 960px) {
+    .svg-hero {
+        transform: scale(2) rotate(25deg);
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .header,
